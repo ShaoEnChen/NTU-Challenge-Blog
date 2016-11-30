@@ -14,6 +14,10 @@
  * @package WordPress
  */
 
+// ** 設定filesystem method ** //
+/** Force it to use Direct File I/O requests from within PHP */
+define('FS_METHOD', 'direct');
+
 // ** MySQL 設定 - 您可以從主機服務提供商獲取相關資訊。 ** //
 /** WordPress 的資料庫名稱，請更改 "database_name_here" */
 define('DB_NAME', 'NTUChallenge_Blog');
