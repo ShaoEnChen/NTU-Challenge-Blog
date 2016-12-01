@@ -19,6 +19,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>
+			
 			<?php if ( ! is_paged() ) : ?>
 			<div class="latest-posts">
 				<div class="container">
@@ -39,17 +40,18 @@ get_header(); ?>
 			$post_counter = 0;
 			while ( have_posts() ) : the_post();
 				// 將 $post_counter 改為判斷<1（只有第一則為latest-posts__post）
-				if ( $post_counter < 1 && ! is_paged() ) :
-					get_template_part( 'template-parts/content-latest' ); ?>
+				if ( $post_counter < 1 && ! is_paged() ) : ?>
+					<?php get_template_part( 'template-parts/content-latest' ); ?>
 							</div>
 						</div>
 					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="masonry-grid">
-									<div class="masonry-grid__sizer"></div>
-									<div class="masonry-grid__gutter-sizer"></div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="masonry-grid">
+								<div class="masonry-grid__sizer"></div>
+								<div class="masonry-grid__gutter-sizer"></div>
 					<?php ++$post_counter;
 					continue; ?>
 
@@ -57,21 +59,8 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 					
 				<?php endif; ?>
-				
-				<?php if ( ! is_paged() && 3 === (++$post_counter-1) && $wp_query->post_count > 3 ) : ?>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="masonry-grid">
-							<div class="masonry-grid__sizer"></div>
-							<div class="masonry-grid__gutter-sizer"></div>
-				<?php endif;
-			endwhile; ?>
+				<?php endwhile; ?>
+				<!-- 移除Karta前三則文章自成一個container的設定 -->
 						</div>
 					</div>
 				</div>

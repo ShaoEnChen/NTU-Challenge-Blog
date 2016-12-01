@@ -27,7 +27,7 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="site-branding">
-								<?php karta_logo(); ?>
+								
 							</div><!-- .site-branding -->
 
 							<nav id="site-navigation" class="main-navigation" role="navigation">
