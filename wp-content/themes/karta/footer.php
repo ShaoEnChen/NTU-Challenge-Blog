@@ -11,7 +11,8 @@
 
 ?>
 		</div><!-- #content -->
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<!-- 隱藏Footer -->
+	<!--<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-footer-widgets">
 			<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 			<div class="container">
@@ -38,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>-->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

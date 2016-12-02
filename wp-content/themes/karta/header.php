@@ -27,10 +27,13 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="site-branding">
-								
-							</div><!-- .site-branding -->
+								<!-- <?php karta_logo(); ?> -->
+								<a href="/blog">
+									<img id="site-title" src="wp-content/uploads/2016/12/title-04.png">
+									<img id="site-title-sm" src="wp-content/uploads/2016/12/title_bg-03.png">
+								</a><!-- Custom logo -->
 
-							<nav id="site-navigation" class="main-navigation" role="navigation">
+								<nav id="site-navigation" class="main-navigation" role="navigation">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu1">
 										<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'karta' ); ?></span>
@@ -40,6 +43,7 @@
 									</button>
 								</div>
 								<div class="collapse navbar-collapse" id="menu1">
+								
 								<?php
 								if (has_nav_menu('primary')) {
 									wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'main-navigation__menu', 'container' => '', 'menu_id' => 'primary-menu', 'walker' => new Karta_Walker_Nav_Menu ) );
@@ -51,9 +55,36 @@
 								?>
 								</div>
 							</nav><!-- #site-navigation -->
+							</div><!-- .site-branding -->
 						</div>
 					</div>
 				</div>
+				
+				<!-- 最新文章 -->
+				<?php if ( have_posts() ) : ?>
+					<?php if ( ! is_paged() ) : ?>
+						<div class="latest-posts">
+							<img id="latest-post-img" src="wp-content/uploads/2016/12/latest-article.png">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12">
+			
+					<?php else : ?>
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="masonry-grid">
+										<div class="masonry-grid__sizer"></div>
+										<div class="masonry-grid__gutter-sizer"></div>
+			
+					<?php endif; ?>
+					<?php get_template_part( 'template-parts/content-latest' ); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php endif; ?>
+				
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
