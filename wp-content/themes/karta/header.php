@@ -29,8 +29,8 @@
 							<div class="site-branding">
 								<!-- <?php karta_logo(); ?> -->
 								<a href="/blog">
-									<img id="site-title" src="wp-content/uploads/2016/12/title-04.png">
-									<img id="site-title-sm" src="wp-content/uploads/2016/12/title_bg-03.png">
+									<img id="site-title" src="/blog/wp-content/uploads/2016/12/title-04.png">
+									<img id="site-title-sm" src="/blog/wp-content/uploads/2016/12/title_bg-03.png">
 								</a><!-- Custom logo -->
 
 								<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -64,7 +64,7 @@
 				<?php if ( have_posts() ) : ?>
 					<?php if ( ! is_paged() ) : ?>
 						<div class="latest-posts">
-							<img id="latest-post-img" src="wp-content/uploads/2016/12/latest-article.png">
+							<img id="latest-post-img" src="/blog/wp-content/uploads/2016/12/latest-article.png">
 							<div class="container">
 								<div class="row">
 									<div class="col-xs-12">

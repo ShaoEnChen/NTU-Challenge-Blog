@@ -47,6 +47,16 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+		<!-- FB Button -->
+		<div id="fb-button">
+			<a href="https://www.facebook.com/ntuchallenge/" target="_blank">
+				<img id="fb-icon" src="/blog/wp-content/uploads/2016/12/fb1.png">
+			</a>
+			<a href="https://www.facebook.com/ntuchallenge/" target="_blank">
+				<img id="fb-icon-hover" src="/blog/wp-content/uploads/2016/12/fb2.png">
+			</a>
+		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
