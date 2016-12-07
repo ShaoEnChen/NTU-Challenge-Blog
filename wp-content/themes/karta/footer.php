@@ -11,6 +11,28 @@
 
 ?>
 		</div><!-- #content -->
+
+	
+		<!-- To Site Button -->
+		<div id="challenge-button">
+			<a href="https://ntuchallenge.com">
+				<img id="challenge-icon" src="/blog/wp-content/uploads/2016/12/ntuc.png">
+			</a>
+			<a href="https://ntuchallenge.com">
+				<img id="challenge-icon-hover" src="/blog/wp-content/uploads/2016/12/ntuc2.png">
+			</a>
+		</div>
+
+		<!-- FB Button -->
+		<div id="fb-button">
+			<a href="https://www.facebook.com/ntuchallenge/" target="_blank">
+				<img id="fb-icon" src="/blog/wp-content/uploads/2016/12/fb1.png">
+			</a>
+			<a href="https://www.facebook.com/ntuchallenge/" target="_blank">
+				<img id="fb-icon-hover" src="/blog/wp-content/uploads/2016/12/fb2.png">
+			</a>
+		</div>
+
 	<!-- 隱藏Footer -->
 	<!--<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-footer-widgets">

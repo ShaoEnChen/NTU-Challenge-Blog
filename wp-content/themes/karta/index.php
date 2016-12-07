@@ -20,7 +20,9 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="container">
 			<div class="row">
-				<img id="latest-post-img-sm" src="wp-content/uploads/2016/12/latest-article.png">
+				<!-- Latest Article -->
+				<img id="latest-post-img-sm" src="/blog/wp-content/uploads/2016/12/latest-article.png">
+
 				<!-- Recent Articles -->
 				<img id="recent-post-img" src="wp-content/uploads/2016/12/recent-article.png">
 				<div class="col-xs-12">
@@ -45,16 +47,6 @@ get_header(); ?>
 		</div>
 		<?php endif;  // If have posts.
 		?>
-		
-		<!-- FB Button -->
-		<div id="fb-button">
-			<a href="https://www.facebook.com/ntuchallenge/" target="_blank">
-				<img id="fb-icon" src="/blog/wp-content/uploads/2016/12/fb1.png">
-			</a>
-			<a href="https://www.facebook.com/ntuchallenge/" target="_blank">
-				<img id="fb-icon-hover" src="/blog/wp-content/uploads/2016/12/fb2.png">
-			</a>
-		</div>
 	</main>
 </div>
 
